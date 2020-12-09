@@ -46,11 +46,8 @@ $(document).ready(function() {
 
 var clistPromise = new Promise(function(resolve, reject) {
     var checked = 0;
-    //Reference the Table.
     var table = document.getElementById("table");
-    //Reference all the CheckBoxes in Table.
     var chks = table.getElementsByTagName("input");
-    //Loop and count the number of checked CheckBoxes.
     for (var i = 0; i < chks.length; i++) {
         if (chks[i].checked) {
             checked++;
@@ -67,5 +64,24 @@ var clistPromise = new Promise(function(resolve, reject) {
 });
 
 function Validate() {
-    clistPromise.then(function(s) { alert(s) }).catch(function(e) { console.log(e) })
+    var checked = 0;
+
+    //Reference the Table.
+    var table = document.getElementById("table");
+
+    //Reference all the CheckBoxes in Table.
+    var chks = table.getElementsByTagName("input");
+
+    //Loop and count the number of checked CheckBoxes.
+    for (var i = 0; i < chks.length; i++) {
+        if (chks[i].checked) {
+            checked++;
+        }
+    }
+    if (checked % 5 == 0 && checked != 90) {
+        alert("Congrats, You completed 5 tasks successfully.");
+        return true;
+    } else {
+        return false;
+    }
 };
