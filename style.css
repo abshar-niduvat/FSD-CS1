@@ -1,0 +1,22 @@
+/* STYLE FOR HTML,BODY AND HEADER PART */
+html,body{
+    background-image: url('https://image.freepik.com/free-photo/coffee-list_23-2148475402.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', ' Calibri', 'Trebuchet MS', 'sans-serif';
+}
+.navbar{
+    padding: 10%;
+}
+#navbar-nav{
+    float: right;
+}
+.heading{
+    text-align: center; 
+        color: white; 
+        font-size: xx-large; 
+        font-family: 'Gill Sans', 'Gill Sans MT', ' Calibri', 'Trebuchet MS', 'sans-serif';
+
+}
+/* DESIGNED AND DEVELOPED BY MUHAMMED SHIYAD CM */
